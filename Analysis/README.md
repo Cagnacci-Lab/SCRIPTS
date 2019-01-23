@@ -26,3 +26,9 @@ Each markdown (md) focusses on a certain topic:
 
 ***Keywords:** database, raster, spatial, R, postgresql, rpostgis, crop, mask, extract, buffer, transform, pgGetRast, pgGetBoundary, intersection*
 
+## [Geospatial Analysis](GEOSPATIAL_ANALYSIS.md)
+
+  * [Load raster files](GEOSPATIAL_ANALYSIS.md)
+  * [Compute Terrain Characteristics](GEOSPATIAL_ANALYSIS.md)
+
+***Keywords:** database, raster, spatial, R, postgresql, rpostgis, crop, mask, extract, buffer, transform, pgGetRast, pgGetBoundary, intersection*
