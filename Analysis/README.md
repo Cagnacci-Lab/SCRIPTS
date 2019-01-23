@@ -31,4 +31,4 @@ Each markdown (md) focusses on a certain topic:
   * [Load raster files](GEOSPATIAL_ANALYSIS.md)
   * [Compute Terrain Characteristics](GEOSPATIAL_ANALYSIS.md)
 
-***Keywords:** database, raster, spatial, R, postgresql, rpostgis, crop, mask, extract, buffer, transform, pgGetRast, pgGetBoundary, intersection*
+***Keywords:** DEM, raster, spatial, R, slope, aspect, TPI - Topographic Position Index, TRI - Terrain ruggedness index, roughness, flowdir, heat load index*
