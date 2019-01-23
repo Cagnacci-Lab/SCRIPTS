@@ -1,13 +1,5 @@
 Each markdown (md) focusses on a certain topic: 
 
-## [Home range estimation methods](HOME_RANGE_ESTIMATION.md)
-  * [mcp](HOME_RANGE_ESTIMATION.md)
-  * [kernel](HOME_RANGE_ESTIMATION.md)
-  * [tlocoh](HOME_RANGE_ESTIMATION.md)
-  * [brownian bridge](HOME_RANGE_ESTIMATION.md)
-
-***Keywords:** HRE, adehabitatHR, move, polygons*
-
 
 ## [Database access](DATABASE_ACCESS.md)
 
@@ -26,9 +18,21 @@ Each markdown (md) focusses on a certain topic:
 
 ***Keywords:** database, raster, spatial, R, postgresql, rpostgis, crop, mask, extract, buffer, transform, pgGetRast, pgGetBoundary, intersection*
 
+
 ## [Geospatial Analysis](GEOSPATIAL_ANALYSIS.md)
 
   * [Load raster files](GEOSPATIAL_ANALYSIS.md)
   * [Compute Terrain Characteristics](GEOSPATIAL_ANALYSIS.md)
 
 ***Keywords:** DEM, raster, spatial, R, slope, aspect, TPI - Topographic Position Index, TRI - Terrain ruggedness index, roughness, flowdir, heat load index*
+
+
+## [Home range estimation methods](HOME_RANGE_ESTIMATION.md)
+  * [mcp](HOME_RANGE_ESTIMATION.md)
+  * [kernel](HOME_RANGE_ESTIMATION.md)
+  * [tlocoh](HOME_RANGE_ESTIMATION.md)
+  * [brownian bridge](HOME_RANGE_ESTIMATION.md)
+
+***Keywords:** HRE, adehabitatHR, move, polygons*
+
+
