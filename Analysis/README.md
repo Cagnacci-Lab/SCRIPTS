@@ -35,4 +35,7 @@ Each markdown (md) focusses on a certain topic:
 
 ***Keywords:** HRE, adehabitatHR, move, polygons*
 
+## [Load functions from github](LOAD_FUNCTIONS_FROM_GITHUB.md)
+  
+***Keywords:** github, functions, load,*
 
