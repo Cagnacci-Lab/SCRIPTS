@@ -1,4 +1,4 @@
-resample_timeseries <- function(data = SF, timestamp_column = 'acquisition_time', by = '8 DSTdays'){
+resample_timeseries_day <- function(data = SF, timestamp_column = 'acquisition_time', by = '8 DSTdays'){
   require(lubridate)
   require(timeseq_day)
 
