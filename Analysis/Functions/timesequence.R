@@ -1,4 +1,4 @@
-timesequence <- function(data, timestamp_column = 'acquisition_time', by = "8 DSTdays"){
+timeseq_day <- function(data, timestamp_column = 'acquisition_time', by = "8 DSTdays"){
   require(lubridate)
   # generates time sequence based on minimum date in timeseries 
 
