@@ -1,7 +1,5 @@
 resample_timeseries_day <- function(data = SF, timestamp_column = 'acquisition_time', by = '8 DSTdays'){
   require(lubridate)
-  require(timeseq_day)
-
   # resample your dataset using one sample per x number of days 
   # data is your data set including the timestamps 
   # timestamp_column is the timestamp in your data set
