@@ -9,6 +9,13 @@ Here is an example for the functions "export.R" and "opendir.R" stored in the fu
 library(RCurl)
 script <- getURL("https://raw.githubusercontent.com/Cagnacci-Lab/SCRIPTS/master/Analysis/Functions/export.R", ssl.verifypeer= FALSE)
 eval(parse(text = script))
+
 script <- getURL("https://raw.githubusercontent.com/Cagnacci-Lab/SCRIPTS/master/Analysis/Functions/opendir.R", ssl.verifypeer= FALSE)
+eval(parse(text = script))
+
+script <- getURL("https://raw.githubusercontent.com/Cagnacci-Lab/SCRIPTS/master/Analysis/Functions/timeseq_day.R", ssl.verifypeer= FALSE)
+eval(parse(text = script))
+
+script <- getURL("https://raw.githubusercontent.com/Cagnacci-Lab/SCRIPTS/master/Analysis/Functions/resample_timeseries_day.R", ssl.verifypeer= FALSE)
 eval(parse(text = script))
 ```
