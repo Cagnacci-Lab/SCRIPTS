@@ -1,4 +1,4 @@
-img_in_plot <-function(img, x, y, size){
+imgplot <-function(img, x, y, size){
   dims<-dim(img)[1:2] #number of x-y pixels for the logo (aspect ratio)
   AR<-dims[1]/dims[2]
   par(usr=c(0, 1, 0, 1))
