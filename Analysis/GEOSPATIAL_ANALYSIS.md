@@ -61,7 +61,7 @@ DEM <- raster("DEM.tif")
 TRI <- tri(DEM)
 TPI <- tpi(DEM)
 
-par(mfrow=c(1:3))
+par(mfrow=c(1,3))
 raster::plot(DEM)
 raster::plot(TRI)
 raster::plot(TPI)
@@ -79,7 +79,7 @@ DEM <- raster("DEM.tif")
 heat_load <- hli(DEM)
 
 # Visual comparison of the outputs (Digital Elevation Model vs. Heat Load map)
-par(mfrow=c(1:2))
+par(mfrow=c(1,2))
 raster::plot(DEM)
 raster::plot(heat_load)
 ```
