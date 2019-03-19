@@ -39,3 +39,5 @@ Each markdown (md) focusses on a certain topic:
   
 ***Keywords:** github, functions, load,*
 
+## [Data type](DATA_TYPE.md)
+***Keywords:** Byte, Int16, UInt16, UInt32, Int32, Float32, Float64*
