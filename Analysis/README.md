@@ -23,6 +23,7 @@ Each markdown (md) focusses on a certain topic:
 
   * [Load raster files](GEOSPATIAL_ANALYSIS.md)
   * [Compute Terrain Characteristics](GEOSPATIAL_ANALYSIS.md)
+  * [Trasform and convert coordinates](COORDINATES_CONVERSION.md)
 
 ***Keywords:** DEM, raster, spatial, R, slope, aspect, TPI - Topographic Position Index, TRI - Terrain ruggedness index, roughness, flowdir, heat load index*
 
@@ -34,6 +35,10 @@ Each markdown (md) focusses on a certain topic:
   * [brownian bridge](HOME_RANGE_ESTIMATION.md)
 
 ***Keywords:** HRE, adehabitatHR, move, polygons*
+
+## [Cut and regularize trajectories](CUT_REGULARIZE_TRAJ.md)
+  
+***Keywords:** ltraj, movement, regularize*
 
 ## [Load functions from github](LOAD_FUNCTIONS_FROM_GITHUB.md)
   
