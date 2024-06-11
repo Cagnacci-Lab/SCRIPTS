@@ -78,9 +78,8 @@ status_job <- function(job) {
 # data retrieval ----
 
 # set time and space range
-## date_span <- c("2021-01-01", "2023-11-30") ## too big to process; use smaller spans instead 
-
-date_span <- c("2023-09-01", "2023-11-30") # 3-month extraction
+## SET DATES ~ 20 DAYS BEFORE AND AFTER YOUR DATA BECAUSE LATER ARE NEEDED FOR SMOOTHING
+date_span <- c("2023-09-01", "2023-11-30") # example 3-month extraction
 prj_bbox <- list(west = 10.36, south = 46.21, east = 11.22, north = 46.57)
 
 # load collection of tiles
