@@ -17,7 +17,8 @@ library(rsat)
 
 # Data loading ----
 # set as a directory the folder where the raw NDVI data is stored 
-dir_ndvi <- 'C:/Downloads/folder_ndvi' 
+dir_ndvi <- 'C:/Downloads/folder_ndvi/' 
+dir.create(paste0(dir_ndvi, 'smooth'))
 
 
 # table with summary information
@@ -31,7 +32,7 @@ timediff <-
 # Smoothing ----
 tot_length <- length(list.files(dir_ndvi, pattern = ".tif"))
 
-for (i in c(9:(tot_length - 3))){ # remove the last three tiles becasue smoothing will be unbalanced
+for (i in c(4:(tot_length - 4))){ # remove the first and last slide tiles because smoothing will be unbalanced
   
   # create table with target raster, day differences, and weights
   # target raster has a weight of 10, and for each day (before and after)
