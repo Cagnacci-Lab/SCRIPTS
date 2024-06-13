@@ -17,7 +17,7 @@ library(padr)
 
 
 # Data loading ----
-dir_ndvi <- 'F:/4_UngulAlps/high_resolution_ndvi/' 
+dir_ndvi <- 'F:/4_UngulAlps/high_resolution_ndvi/interpolated/' 
 
 # Time difference
 timediff <- 
