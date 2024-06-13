@@ -1,19 +1,34 @@
-here
+
+# # # # # # # # # # # # # # # # NDVI interpolation # # # # # # # # # # # # # # #
+sessionInfo(); getwd()
+rm(list = ls()); gc()
+
+library(terra)
+library(stringr)
+library(raster)
+library(dplyr)
+library(tidyr)
+library(sf)
+library(tictoc)
+library(ggplot2)
+library(lubridate)
+library(rsat)
+library(padr)
 
 
+# Data loading ----
 dir_ndvi <- 'F:/4_UngulAlps/high_resolution_ndvi/' 
 
+# Time difference
 timediff <- 
   tibble(file_name = c(list.files(dir_ndvi, pattern = ".tif"))) %>%
   mutate(date = str_sub(list.files(dir_ndvi, pattern = ".tif"),
-                        start = 8, end = 17) %>% ymd()) %>%
-  filter(date >= '2020-10-13')
+                        start = 8, end = 17) %>% ymd())
 
 timediff2 <- 
   tibble(file_name = c(list.files(dir_ndvi, pattern = ".tif"))) %>%
   mutate(date = str_sub(list.files(dir_ndvi, pattern = ".tif"),
                         start = 8, end = 17) %>% ymd()) %>%
-  filter(date >= '2020-10-13') %>%
   pad() %>%
   filter(is.na(file_name))
   
@@ -48,23 +63,8 @@ for (i in c(9:(nrow(timediff2) - 3))){ # remove first and last layers
   
   days <- sub$day[sub$day != 8]
   vals <- values(tile)
-
   
-  # apply approach ----
-  # new_vals <-
-  #   apply(vals, 1, function(x){
-  #     ifelse(
-  #       test = sum(!is.na(c(x[1:ncol(vals)]))) >= 2,
-  #       yes = approx(days,
-  #                    c(x[1:ncol(vals)]),
-  #                    xout = 8,
-  #                    rule = 2)$y,
-  #       no = NA
-  #     )
-  #   })
-  # ----
 
-  
   # for loop approach ----
   new_vals2 <- vector("numeric", nrow(vals))
   for (v in 1:nrow(vals)) {
