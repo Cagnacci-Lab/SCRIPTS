@@ -1,5 +1,5 @@
 
-# # # # # # # # # # # # # # # # NDVI interpolation # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # NDVI gap filling # # # # # # # # # # # # # # #
 sessionInfo(); getwd()
 rm(list = ls()); gc()
 
